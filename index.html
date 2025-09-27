@@ -4,18 +4,47 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width= device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css" />
 <title>Path to Sucess - Life Coaching</title>
+<link rel="stylesheet" href="style.css"/>
+<meta name="description" content="Unlock your full potential with personalized life,">
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>Path to Success</h1>
-            <p>
-                Unlock your full potential with personalized life coaching
-            </p>
-        </div>
-    </header>
+    <!--Skip link lets keyboard users to jump straight to <main> -->
+        <a class="skip-link" href="#main"><Skip to main content></a>
+
+         <!--Webiste header where you would place branding and primary nav-->   
+        <header>
+            <!--each individual piece of content is wrapped(h1,p,a)
+            using a utility container .wrap to center content-->
+            <div class=""brand wrap>
+                <!--h1 should appear once per page; its the site name-->
+                <h1 class="site-title">Path to Success</h1>
+                <!--website tagline-->
+                <p class="site-tagline">
+                    Unlock your full potential with personalized life coaching
+                </p>
+                <!--Primary call to action anchored into the CTA section
+                <a class="btn primary" href="#first-step"> Schedule Now</a> -->
+
+                
+            </div>
+            <!--****primary navigation****
+                - <nav> has aria-label for screen reader context
+                - Each menu link jumps to a section id below
+                *********************************-->
+            <nav class="primary-nav" aria-label="primary">
+                <!--unorganized list-->
+                <ul>
+                    <!--nav items our services,why choose us, prices, take the first step-->
+                    <li><a>Our services</a></li>
+                    <li><a>Why choose us</a></li>
+                    <li><a>Prices</a></li>
+                    <li><a>Take the First Step</a></li>
+                </ul>
+
+        </header>
 </body>
 
 </html>
