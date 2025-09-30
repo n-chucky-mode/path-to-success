@@ -1,40 +1,26 @@
 <DOCTYPE html>
 <html lang="en">
 
+<!--********Head**********-->
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width= device-width, initial-scale=1">
+<meta name="viewport" content="width= device-width, initial-scale=1" />
 <link rel="stylesheet" href="styles.css" />
 <title>Path to Sucess - Life Coaching</title>
-<link rel="stylesheet" href="style.css"/>
-<meta name="description" content="Unlock your full potential with personalized life,">
 </head>
-
+<!--********End Head**********-->
 <body>
-    <!--Skip link lets keyboard users to jump straight to <main> -->
-        <a class="skip-link" href="#main"><Skip to main content></a>
-
-         <!--Webiste header where you would place branding and primary nav-->   
+        <!--Webiste header for branding and primary nav-->   
         <header>
-            <!--each individual piece of content is wrapped(h1,p,a)
-            using a utility container .wrap to center content-->
-            <div class="brand wrap">
+            <div>
                 <!--h1 should appear once per page; its the site name-->
-                <h1 class="site-title">Path to Success</h1>
+                <h1>Path to Success</h1>
                 <!--website tagline-->
-                <p class="site-tagline">
+                <p>
                     Unlock your full potential with personalized life coaching
                 </p>
-                <!--Primary call to action anchored into the CTA section
-                <a class="btn primary" href="#first-step"> Schedule Now</a> -->
-
-                
             </div>
-            <!--****primary navigation****
-                - <nav> has aria-label for screen reader context
-                - Each menu link jumps to a section id below
-                *********************************-->
-            <nav class="primary-nav" aria-label="primary">
+            <nav>
                 <!--unorganized list-->
                 <ul>
                     <!--nav items our services,why choose us, prices, take the first step-->
@@ -45,128 +31,133 @@
                 </ul>
             </nav>
         </header>
+        <!--******** End of Webiste header for branding and primary nav*************-->
+
         <!--now for the main content-->
-        <main id="services" class="wrap content">
+        <main id="main">
             <!-- new section-->
-             <section id="services" aria-labelledby="services-title">
-                <!--section heading-->
+            <section>
+                <h2 id="intro title">Personalized Coaching</h2>
+                 <!--section heading-->
                 <h2 id="services-title">Our Services</h2>
 
-                <!--create a subsection of services-->
-                <section aria-labelledby="one-on-one-title" class="block">
-                    <!--Section heading-->
-                    <h3 id="one-on-one-title">One-on-One Coaching</h3>
-
-                    <!--each service is a self-contained <article>-->
-                    <article class="card">
-                        <!--Icon image should go here alt="teal icon of a smiling face"-->
-                        <img class="icon" src="images/personal-development.png" alt="teal icon of a smiling face"/>
-                        <h4>Personal Development</h4>
-                        <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building confidence, 
-                           breaking bad habits, or discovering your true purpose, we'll work together to create a clear roadmap for success.</p>
-
-                    </article>
-
-                        <article class="card">
-                        <!--Icon image should go here alt="t"lavender icon of a briefcase""-->
-                        <img class="icon" src="images/career-coaching.png" alt="lavender icon of a briefcase"/>
-                        <h4>Career Coaching</h4>
-                        <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and build the skills 
-                            needed to thrive in your professional life.</p>
-
-                    </article>
-
-                     </article>
-
-                        <article class="card">
-                        <!--Icon image should go here alt="pink icon of a heart"-->
-                        <img class="icon" src="images/relationship-coaching.png" alt="pink icon of a heart"/>
-                        <h4>Relationship Coaching</h4>
-                        <p>Enhance your relationships with better communication, understanding, and empathy. Whether it's family, friends, or partners, 
-                            we'll help you build stronger connections.</p>
-
-                    </article>
-
-                </section>
-
-                <!--Group coaching section-->
-                <section aria-labelledby="group-title" class="block">
-
-                    <h3 id="group-title">Group Coaching</h3>
-                    <img class="icon" src="images/supportive-community.png" alt="yellow icon of hands clasping"/>
-                    <article class="card">
-                        <h4>Supportive Commnunity</h4>
-                        <p>Join a group of like-minded individuals on a similar journey. 
-                            Share experiences, gain insights, and grow together in a safe, supportive environment.</p>
-                    </article>
-
-                    <article class="card">
-                        <img class="icon" src="images/focused-session.png" alt="teal icon of a clock face"/>
-                        <h4>Focused Sessions</h4>
-                        <p>Our group coaching sessions focus on specific themes such as confidence-building, time management, 
-                         or work-life balance. Each session is designed to provide actionable takeaways that you can apply immediately.</p>
-                    </article>
-
-                    <!--Grouped workshop seminars section-->
-                    <section aria-labelledby="workshops-title" class="block">
-                        <h3 id="workshops-title">Workshops &amp; Seminars</h3>
-                        <article>
-                            <img class="icon" src="images/interactive-learning.png" alt="lavender icon of text conversation"/>
-                            <h4>Interactive Learning</h4>
-                            <p>Participate in our interactive workshops and seminars that cover a range of topics, from goal setting to stress management. 
-                            These events are designed to provide practical tools and strategies that you can implement in your daily life.</p>
-                        </article>
-                </section>
-                <!--Online courses section-->
-                <section aria-labelledby="courses-title" class="block">
-                    <h3 id="courses-title">Online Courses</h3>
-
-                    <article class="card">
-                        <img class="icon" src="images/flexible-learning.png" alt="pink icon of a curly arrow"/>
-                        <h4>Flexible Learning</h4>
-                        <p>Access our online courses at your convenience. With video lessons, downloadable resources, 
-                            and exercises, you can learn at your own pace from the comfort of your home.</p>
-
-                    </article>
-                </section>
-
             </section>
-                <section id="why" aria-labelledby="why-title"></section>
-                    <h2>Why Choose Us</h2>
-                    <!--group why choose us-->
-                    <section id="why" aria-labelledby="why-title">
-                    <!--place each benefit in its own <article>-->
-                    <article class="pill"><h3>Personalized Approach</h3></article>
-                    <article class="pill"><h3>Proven Results</h3></article>
-                    <article class="pill"><h3>Supportive Environment</h3></article>
-                    <article class="pill"><h3>Flexible Options</h3></article>
+
+        <!--create a subsection of services-->
+        <section>
+            <!--Section heading-->
+            <h3 id="one-on-one-title">One-on-One Coaching</h3>
+
+            <!--each service is a self-contained <article>-->
+            <article>
+            <!--Icon image should go here alt="teal icon of a smiling face"-->
+                <img src="images/personal-development.png" alt="teal icon of a smiling face"/>
+                <h4>Personal Development</h4>
+                <p>Identify and overcome obstacles holding you back from living your best life. Whether it's building confidence, 
+                breaking bad habits, or discovering your true purpose, we'll work together to create a clear roadmap for success.</p>
+
+            </article>
+
+            <article>
+            <!--Icon image should go here alt="t"lavender icon of a briefcase""-->
+                <img src="images/career-coaching.png" alt="lavender icon of a briefcase"/>
+                <h4>Career Coaching</h4>
+                <p>Feeling stuck in your career? We'll help you clarify your goals, develop a plan for advancement, and build the skills 
+                    needed to thrive in your professional life.</p>
+
+            </article>
+
+        
+            <article>
+            <!--Icon image should go here alt="pink icon of a heart"-->
+                <img src="images/relationship-coaching.png" alt="pink icon of a heart"/>
+                <h4>Relationship Coaching</h4>
+                <p>Enhance your relationships with better communication, understanding, and empathy. Whether it's family, friends, or partners, 
+                we'll help you build stronger connections.</p>
+
+            </article>
+
+        </section>
+
+        <!--Group coaching section-->
+        <section>
+
+            <h3 id="group-title">Group Coaching</h3>
+            <img src="images/supportive-community.png" alt="yellow icon of hands clasping"/>
+            <article>
+                <h4>Supportive Commnunity</h4>
+                <p>Join a group of like-minded individuals on a similar journey. 
+                Share experiences, gain insights, and grow together in a safe, supportive environment.</p>
+            </article>
+
+            <article>
+                <img src="images/focused-session.png" alt="teal icon of a clock face"/>
+                <h4>Focused Sessions</h4>
+                <p>Our group coaching sessions focus on specific themes such as confidence-building, time management, 
+                         or work-life balance. Each session is designed to provide actionable takeaways that you can apply immediately.</p>
+            </article>
+
+        <!--Grouped workshop seminars section-->
+            <section>
+                <h3 id="workshops-title">Workshops &amp; Seminars</h3>
+                <article>
+                <img src="images/interactive-learning.png" alt="lavender icon of text conversation"/>
+                <h4>Interactive Learning</h4>
+                <p>Participate in our interactive workshops and seminars that cover a range of topics, from goal setting to stress management. 
+                These events are designed to provide practical tools and strategies that you can implement in your daily life.</p>
+                </article>
+            </section>
+
+        <!--Online courses section-->
+            <section>
+                <h3 id="courses-title">Online Courses</h3>
+
+                <article>
+                <img src="images/flexible-learning.png" alt="pink icon of a curly arrow"/>
+                <h4>Flexible Learning</h4>
+                <p>Access our online courses at your convenience. With video lessons, downloadable resources, 
+                    and exercises, you can learn at your own pace from the comfort of your home.</p>
+
+                </article>
             </section>
 
             
-            <!--Group: pricing
+            <section>
+                <h2>Why Choose Us</h2>
+                <!--place each benefit in its own <article>-->
+                <article><h3>Personalized Approach</h3></article>
+                <article><h3>Proven Results</h3></article>
+                <article></article><h3>Supportive Environment</h3></article>
+                <article><h3>Flexible Options</h3></article>
+            </section>
+
+            
+     <!--Group: *********pricing*****************
             -each table should be wrapped in an <article>
             -all headings are there -->
-            <section id="pricing" aria-labelledby="pricing-title">
-                
-                <h2 id="pricing-title>Pricing</h2>
+            <section id="pricing">
+               <h2 id="pricing-title">Pricing</h2>
+               
+             <!-- ***********table*************
+                <thead> for column headers
+                <tbody> for data rows
+                ****************************** -->
+            <article>
+                <h3>One-on-One Coaching</h3>
+                <table>
+                    <thead><tr><th scope="col">Service</th><th scope="col">Cost</th></tr></thead>
+                    <tbody>
+                    <tr><td>Single Session</td><td>$150</td></tr>
+                    <tr><td>Monthly Package</td><td>$550</td></tr>
+                    <tr><td>3-month Package</td><td>$1500</td></tr>
+                    </tbody>
+                </table>
+            </article>
 
-                <article class="pricing-table">
-                    <h3>One-on-One Coaching</h3>
-                    <!--***********table*************
-                    <thead> for column headers
-                    <tbody> for data rows
-                        ******************************-->
-                    <table>
-                        <thead><tr><th scope="col">Service</th><th scope="col">Cost</th></tr></thead>
-                        <tbody>
-                            <tr><td>Single Session</td><td>$150</td></tr>
-                            <tr><td>Monthly Package</td><td>$550</td></tr>
-                            <tr><td>3-month Package</td><td>$1500</td></tr>
-                        </tbody>
-                    </table
-                </article>
 
-                <article class="pricing-table">
+        <!--updating from top to here-->
+
+                <article>
                     <h3>Group Coaching</h3>
                     <!--***********table*************
                     <thead> for column headers
@@ -178,10 +169,10 @@
                             <tr><td>Single Session</td><td>$75</td></tr>
                             <tr><td>Monthly Package</td><td>$250</td></tr>
                         </tbody>
-                    </table
+                    </table>
                 </article>
 
-                <article class="pricing-table">
+                <article>
                     <h3>Workshops &amp; Seminars</h3>
                     <!--***********table*************
                     <thead> for column headers
@@ -193,11 +184,11 @@
                             <tr><td>Single Workshop</td><td>$150</td></tr>
                             <tr><td>Seminar Series</td><td>$250</td></tr>
                         </tbody>
-                    </table
+                    </table>
                 </article>
 
 
-                <article class="pricing-table">
+                <article>
                     <h3>Online Courses</h3>
                     <!--***********table*************
                     <thead> for column headers
@@ -214,24 +205,24 @@
                 </article>
             </section>    
                     
-            <section id="first-step" aria-labelledby="cta-title" class="cta-block">
+            <section id="first-step">
                <h2 id="cta-title">Take the First Step Today</h2>
                <p>Your Journey to a more fulfilling life begins with a single step. 
                 Book a free 30-minute consultation today to discover how our coaching services can help you achieve your goals. 
                 Let's work together to create the life you've always dreamed of!</p>
                 <p> 
-                    <a class="btn primary" href="schedule.html">Schedule Now</a>
+                    <a href="schedule.html">Schedule Now</a>
                 </p>
             </section>
 
         </main>
 
         <!-- finally the footer contains secondary info and legal links-->
-         <footer class="site-footer">
+         <footer>
             <p>Copyright 2024</p>
             <p><a href="terms.html">Terms and Conditions</p>
 
-         </footer>
+         </footer> 
 
 </body>
 

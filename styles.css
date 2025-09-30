@@ -4,11 +4,4 @@
 /**/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
-*{box-sizing: border-box; }
-html, body, h1, h2, h3, h4, p, ul, li, figure, figcaption, 
-table, th, td{ margin:0; padding: 0;}
-ul{ list-style: none; }
-img{ max-width: 100%; display: block; height: auto; }
-table{ border-collapse: collapse; width: 100%; }
 
-:focus-visible{ outline: 2px solid #1d4ed8; outline-offset: 2px;}
