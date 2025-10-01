@@ -1,9 +1,49 @@
 
 /* CSS BY Gloria Garcia */
-/* */
-/**/
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
+/*Imported Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+/*css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100svh;
+    text-rendering: optimizeLegibility;/*nicer text*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+img, picture, video, canvas, svg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6, p, figure, blockquote{
+    margin: 0;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, button, textarea, select{
+    font: inherit;
+}
+a{
+    color: inherit;/* let color come from parent*/
+    text-decoration: none;
+}
+
+/*root variables*/
 :root{
     --teal:#4CA7C0;
     --purple:#484FB7;
