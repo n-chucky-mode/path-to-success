@@ -91,7 +91,7 @@ header nav a{
     border-radius: 4px;
 }
 /* fixes invalid id with a space*/
-[id="intro title"]{
+[id="intro-title"]{
     color: var(--white);
     font-size: 1.25rem;
     margin: 0 10px;
@@ -124,17 +124,17 @@ section > article img{
 
 section > article p{
     margin: 0.35rem 0 0;
-    color: #333
+    color: #333;
 }
 
-/********** why choose us*************/
+/********** why choose us *************/
 #why{
     /*pink behind the heading */
     background: #d84f65;
     padding: 8px;
     border-radius: 6px;
 
-/*2 col layout for the 4 basges*/
+/*2 col layout for the 4 badges*/
 display: grid;
 grid-template-columns: repeat(2, minmax(0, 1fr));
 gap: 16px;
@@ -144,18 +144,24 @@ gap: 16px;
 {
     grid-column: 1/-1; /*makes heading span both col*/
     color: var(--white);
-    margin: 6px 4px 0 4px;
+    margin: 6px 4px 0;
 }
+#why > article{
+    display: flex;
+    align-items: center;
+    justify-content: center;/*horizontal*/
+    text-align: center; /*vertical*/
 
-#why > article, 
-#why article > h3{/*change this to black so that i can see the text on light background*/
-    text-align: center;
+    min-height: 90px;
     padding: 16px 10px;
     border-radius: 8px;
     font-weight: 800;
     color: var(--dark);
-
 }
+
+#why > article > h3{margin:0; line-height: 1.2; color: var(--dark);}
+
+
 /*biggest problem why are badges not changing color? try again n cry again */
 #why > article:nth-of-type(1){background: var(--teal);}
 #why > article:nth-of-type(2){background: var(--lavender);}
@@ -164,7 +170,7 @@ gap: 16px;
     text-align: center;
     background: var(--white);
     color: var(--dark);
-    border: 2px solid #ffdede; /*now text for this isnt showing because i have font to white*/
+    border: 2px solid #ffdede; /*now text for this isnt showing because i have font to white--update line 162 to dark font*/
 }
 /*pricing tables*/
 #pricing-title{ margin: 6px 10px; color: var(--white);}
