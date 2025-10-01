@@ -4,4 +4,231 @@
 /**/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
+:root{
+    --teal:#4CA7C0;
+    --purple:#484FB7;
+    --lavender:#6B8FE7;
+    --yellow:#E9BB57;
+    --pink:#D9526F;
+    --dark:#1E1E1E;
+    --white:#ffffff;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; }
+body{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--dark);
+  background: var(--lavender);
+  line-height: 1.45;
+}
+
+/* Headings per spec */
+h1, h2{ font-family: "Kavoon", cursive; }
+h1{ font-size: 3em; margin:0 0 .25rem; color: var(--white); }
+h2{ font-size: 2em; color: var(--white); margin: 0 0 .5rem; }
+header nav h2{ font-size:1.5em; } /* NAV H2 size from spec */
+
+/*headings */
+h3{ font-size: 1.5em; margin: 0.75rem 0.5rem; color: var(--white);}
+h4{ font-size: 1.5em; margin: 0.25rem 0; color: var(--purple);}
+
+/*Layout wrapper fro content column*/
+#main, header, footer{
+    max-width: 450px;
+    margin: 0 auto;
+}
+/* Header/Menu*/
+header{
+    background: var(--purple);
+    text-align: center;
+    padding: 16px 16px 0;
+}
+header p{
+    color: #e7e7ff;
+    margin: 0.25rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+/*menu block*/
+header nav{
+    background: var(--yellow);
+    border-radius: 4px;
+    padding: 10px 12px 12px;
+    margin: 0 8px 16px;
+    position: relative;
+}
+header nav::before{
+    content: "MENU";
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav li + li{margin-top: 10px;}
+
+header nav a{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--purple);
+    background: var(--white);
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 10px 12px;
+}
+#main{
+    background: var(--purple);
+    padding: 10px 10px 20px;
+    border-radius: 4px;
+}
+/* fixes invalid id with a space*/
+[id="intro title"]{
+    color: var(--white);
+    font-size: 1.25rem;
+    margin: 0 10px;
+}
+
+/*service groups */
+#services-title,
+#one-on-one-title,
+#group-title,
+#workshops-title,
+#courses-title{
+    color: var(--white);
+    margin: 6px 10px;
+}
+
+section > article{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 14px;
+    margin: 10px;
+    box-shadow: 0 2px 0 rgba(0,0, 0, 0.15);
+    border: 2px solid rgba(255,255, 255, 0.2);
+}
+/*media/object layout inside cards*/
+section > article img{
+    width: 64px; height: 64px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+section > article p{
+    margin: 0.35rem 0 0;
+    color: #333
+}
+
+/********** why choose us*************/
+#why{
+    /*pink behind the heading */
+    background: #d84f65;
+    padding: 8px;
+    border-radius: 6px;
+
+/*2 col layout for the 4 basges*/
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 16px;
+}
+
+#why > h2
+{
+    grid-column: 1/-1; /*makes heading span both col*/
+    color: var(--white);
+    margin: 6px 4px 0 4px;
+}
+
+#why > article, 
+#why article > h3{/*change this to black so that i can see the text on light background*/
+    text-align: center;
+    padding: 16px 10px;
+    border-radius: 8px;
+    font-weight: 800;
+    color: var(--dark);
+
+}
+/*biggest problem why are badges not changing color? try again n cry again */
+#why > article:nth-of-type(1){background: var(--teal);}
+#why > article:nth-of-type(2){background: var(--lavender);}
+#why > article:nth-of-type(3){background: var(--yellow); color: #2a2a2a;}
+#why > article:nth-of-type(4){
+    text-align: center;
+    background: var(--white);
+    color: var(--dark);
+    border: 2px solid #ffdede; /*now text for this isnt showing because i have font to white*/
+}
+/*pricing tables*/
+#pricing-title{ margin: 6px 10px; color: var(--white);}
+
+#pricing article h3{
+    color: var(--dark);
+    margin: 8px 10px 2px;
+}
+
+/*table shell*/
+table{
+    width: 100%;
+    border-collapse: collapse; /*removes gaps between cells*/
+    background: var(--white);
+    border-radius: 8px; /*rounded corners*/
+    overflow: hidden; /*keeps radius on the header row*/
+}
+
+/*header cells*/
+thead th{
+    background: var(--yellow);
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+/*data cells*/
+tbody td{
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+tbody tr:last-child td{border-bottom: 0;} /*no divider after last row*/
+
+/*call to action pink panel with white heading*/
+#first-step{
+    background: var(--pink);
+    color: var(--white);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 12px 14px 16px;
+}
+#cta-title{ color:var(--white); margin: 0 0 6px; }
+
+#first-step a{
+    display: inline-block;
+    background: var(--white);
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 800;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+/*footer centered*/
+footer{
+    max-width: 420px;
+    margin: 10px auto 24px;
+    text-align: center;
+    color: #d9d9ff;
+}
+footer a{ color: #d9d9ff;}
 
