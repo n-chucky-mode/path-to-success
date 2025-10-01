@@ -190,7 +190,7 @@ gap: 16px;
     display: flex;
     align-items: center;
     justify-content: center;/*horizontal*/
-    text-align: center; /*vertical*/
+    text-align: center; /*horizontal*/
 
     min-height: 90px;
     padding: 16px 10px;
